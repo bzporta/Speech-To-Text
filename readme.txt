@@ -25,11 +25,9 @@ Feel free to expand the project!
 ***
 ***
 Installation:
-You don't need to install anything. Only requirement is to use the Google Chrome Webbrowser. Microsoft Edge and Safari 
-could work too, but aren't tested yet. 
+You don't need to install anything. Only requirement is to use the Google Chrome Webbrowser. Microsoft Edge and Safari could work too, but aren't tested yet. 
 Unfortunately Mozilla Firefox is not supported (you can only type in your commands, but SpeechRecognition does not work).
-When loading the webstite, you'll get a browser notification, where you have to give full permission of using your microphone to
-the data/website.
+When loading the webstite, you'll get a browser notification, where you have to give full permission of using your microphone to the data/website.
 
 
 Project will be updated soon!!!
