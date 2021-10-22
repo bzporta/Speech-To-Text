@@ -16,7 +16,7 @@ Commands to be realised in the future:
 -BIG PROJECT: sending messages (e.g. emails)
 -playing music from Spotify or some other music playing services
 -better page layout
--take memos and save them in a .txt file
+-take memos and save them in an .txt file
 ***
 ***
 ***
@@ -25,9 +25,11 @@ Feel free to expand the project!
 ***
 ***
 Installation:
-You don't need to install anything. Only requirement is to use the Google Chrome Webbrowser. Microsoft Edge and Safari could work too, but aren't tested yet. 
+You don't need to install anything. Only requirement is to use the Google Chrome Webbrowser. Microsoft Edge and Safari 
+could work too, but aren't tested yet. 
 Unfortunately Mozilla Firefox is not supported (you can only type in your commands, but SpeechRecognition does not work).
-When loading the webstite, you'll get a browser notification, where you have to give full permission of using your microphone to the data/website.
+When loading the webstite, you'll get a browser notification, where you have to give full permission of using your microphone to
+the data/website.
 
 
 Project will be updated soon!!!

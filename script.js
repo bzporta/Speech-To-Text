@@ -11,7 +11,7 @@
             
                 // This runs when the speech recognition service starts
                 recognition.onstart = function() {
-                    action.innerHTML = "<small>Ich höre zu, bitte sprechen...</small>";
+                    action.innerHTML = "<small>Ich h&ouml;re zu, bitte sprechen...</small>";
                 };
                 
                 recognition.onspeechend = function() {
@@ -21,15 +21,17 @@
               
                 // This runs when the speech recognition service returns result
                 recognition.onresult = function(event) {
-                    var transcript = event.results[0][0].transcript; 
+                    var transcript = event.results[0][0].transcript;
+					transcript = transcript.toLowerCase();
                     var confidence = event.results[0][0].confidence;
+					
 					
                     //output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
                     //output.classList.remove("hide");
 					if (transcript  == "Firma" | transcript == "Unternehmen")  {
 						window.location.href = "https://www.perfact.de";
 					}
-					if (transcript == "wie spät ist es" | transcript == "Uhrzeit" | transcript == "Zeit") {
+					if (transcript == "wie sp&auml;t ist es" | transcript == "uhrzeit" | transcript == "zeit") {
 						speakUhrzeit();
 					}
 					if (transcript == "test") {
@@ -37,7 +39,7 @@
 					}
 						
 					console.log(transcript);
-                };
+                }
 				
 				recognition.onerror = function() {
 					output.innerHTML = "<b>Ich habe nichts verstanden. Bitte erneut versuchen!</b>";
@@ -74,12 +76,14 @@
 
 				function runAbschicken() {
 					var text = document.getElementById("data").value;
-					if (text  == "Firma" | text == "Unternehmen")  {
+					text = text.toLowerCase();
+					console.log(text);
+					if (text  == "firma" | text == "unternehmen")  {
 						window.location.href = "https://www.perfact.de";
 					}
 					
 					
-					if (text == "wie spät ist es" | text == "Uhrzeit" | text == "Zeit") {
+					if (text == "wie spät ist es" | text == "uhrzeit" | text == "zeit") {
 						speakUhrzeit();
 					}
 					
@@ -87,11 +91,12 @@
 						runTest();
 					}
 					
+					
 				}
 				
 
 				function understanding_error() {
-				action.innerHTML = "Ich habe dich leider nicht verstanden!"
+				time.innerHTML = "Ich habe dich leider nicht verstanden!"
 				}
 
 				function runTest() {
