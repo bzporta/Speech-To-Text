@@ -16,7 +16,7 @@ Commands to be realised in the future:
 -BIG PROJECT: sending messages (e.g. emails)
 -playing music from Spotify or some other music playing services
 -better page layout
--take memos and save them in an .txt file
+-take memos and save them in a .txt file
 ***
 ***
 ***
