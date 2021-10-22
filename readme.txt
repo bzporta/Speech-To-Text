@@ -10,7 +10,7 @@ There are some commands you can use:
 ***
 ***
 Commands to realise in the future:
--searching some stuff on Wikipedia and reading out loud the first 2-3 sentences of the articel (like "search Electron")
+-searching some stuff on Wikipedia and reading out loud the first 2-3 sentences of the article (like "search Electron")
 -current weather information of a town of your choice
 -mobile version
 -BIG PROJECT: sending messages (e.g. emails)
