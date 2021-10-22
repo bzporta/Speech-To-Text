@@ -23,13 +23,17 @@
                 recognition.onresult = function(event) {
                     var transcript = event.results[0][0].transcript; 
                     var confidence = event.results[0][0].confidence;
-                    output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
-                    output.classList.remove("hide");
-					if (transcript == "Firma") {
+					
+                    //output.innerHTML = "<b>Text:</b> " + transcript + "<br/> <b>Confidence:</b> " + confidence*100+"%";
+                    //output.classList.remove("hide");
+					if (transcript  == "Firma" | transcript == "Unternehmen")  {
 						window.location.href = "https://www.perfact.de";
 					}
-					if (transcript == "wie spät ist es" | transcript == "Uhrzeit") {
+					if (transcript == "wie spät ist es" | transcript == "Uhrzeit" | transcript == "Zeit") {
 						speakUhrzeit();
+					}
+					if (transcript == "test") {
+						runTest();
 					}
 						
 					console.log(transcript);
@@ -57,6 +61,42 @@
 				var speaker = new SpeechSynthesisUtterance();
 				speaker.text = 'Es ist' + stunde + 'Uhr und' + minute + 'Minuten';
 				speaker.lang = 'de-DE';
-				output.innerHTML = 'Es ist' + " " +  stunde + " " + 'Uhr und' + " " + minute + " " + 'Minuten.';
+				if (minute < 10) {
+					time.innerHTML = 'Es ist' + " " +  stunde + ":" + "0" + minute + " " + "Uhr";}
+				else {
+					time.innerHTML = 'Es ist' + " " +  stunde + ":" + minute + " " + "Uhr";}
 				speechSynthesis.speak(speaker);
+				}
+
+				function searchURL() {
+					
+				}
+
+				function runAbschicken() {
+					var text = document.getElementById("data").value;
+					if (text  == "Firma" | text == "Unternehmen")  {
+						window.location.href = "https://www.perfact.de";
+					}
+					
+					
+					if (text == "wie spät ist es" | text == "Uhrzeit" | text == "Zeit") {
+						speakUhrzeit();
+					}
+					
+					if (text == "test") {
+						runTest();
+					}
+					
+				}
+				
+
+				function understanding_error() {
+				action.innerHTML = "Ich habe dich leider nicht verstanden!"
+				}
+
+				function runTest() {
+					speaker = new SpeechSynthesisUtterance();
+					speaker.text = 'Alle Systeme funktionieren einwandfrei.'
+					speechSynthesis.speak(speaker);
+					time.innerHTML = "Alle Systeme funktionieren einwandfrei."
 				}

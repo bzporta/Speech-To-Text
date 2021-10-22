@@ -2,14 +2,27 @@
 	<head>
 		<link rel="stylesheet" href="font.css">
 		<title>JavaScript Speech to Text</title>
+		<script src='script.js'> </script>
 	</head>
 	<body>
 		<h2>JavaScript Speech to Text</h2>
-        <p>Klick auf den blauen Knopf und ich höre dir zu!</p>
+		 
+        <p>Klick auf den blauen Knopf und ich h&ouml;re dir zu!</p><p>Alternativ kannst du auch etwas in das Textfeld eingeben.</p>
+		<textarea id="data"> </textarea>
+		<button id="abschicken" onclick="runAbschicken()">Abschicken</button>
         <p><button type="button" onclick="runSpeechRecognition()">Speech to Text</button> &nbsp; <span id="action"></span></p>
 		<p><button type="button" id="cancel"> Erkennung abbrechen!</button>
         <div id="output" class="hide"></div>
-		<script src='script.js'> </script>
+		<div id="time"></div>
+		
+		<div class="commands">
+			<h3> M&ouml;gliche Befehle:</h3> <p></p>
+			Uhrzeit/Wie sp&auml;t ist es? <p></p>
+			Firma/Unternehmen <p></p>
+			Test<p></p>
+		
+		</div>
+		
 		
 	</body>
 </html>
