@@ -9,7 +9,7 @@ There are some commands you can use:
 -test: With this command you can test, if the application works fine.
 ***
 ***
-Commands to realise in the future:
+Commands to be realised in the future:
 -searching some stuff on Wikipedia and reading out loud the first 2-3 sentences of the article (like "search Electron")
 -current weather information of a town of your choice
 -mobile version
