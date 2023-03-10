@@ -1,4 +1,4 @@
-#Speech-To-Text (Alpha)
+# Speech-To-Text (Alpha)
 ***
 This browser application turns speech, which is recognized by a microphone, 
 into a text, which you can easily work with. 
@@ -10,13 +10,13 @@ There are some commands you can use:
 ***
 ***
 Commands to be realised in the future:
--searching some stuff on Wikipedia and reading out loud the first 2-3 sentences of the articel (like "search Electron")
--current weather information of a town of your choice
--mobile version
--BIG PROJECT: sending messages (e.g. emails)
--playing music from Spotify or some other music playing services
--better page layout
--take memos and save them in an .txt file
+- searching some stuff on Wikipedia and reading out loud the first 2-3 sentences of the articel (like "search Electron")
+- current weather information of a town of your choice
+- mobile version
+- BIG PROJECT: sending messages (e.g. emails)
+- playing music from Spotify or some other music playing services
+- better page layout
+- take memos and save them in an .txt file
 ***
 ***
 ***
@@ -39,7 +39,7 @@ Project will be updated soon!!!
 
 
 Changelog:
--10/22/21 There is no difference between writting commands in lower or upper case anymore.
+- 10/22/21 There is no difference between writting commands in lower or upper case anymore.
 
 
 
