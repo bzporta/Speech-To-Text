@@ -4,9 +4,9 @@ This browser application turns speech, which is recognized by a microphone,
 into a text, which you can easily work with. 
 ***
 There are some commands you can use:
--Firma/Unternehmen: you get automatically redirected to an website of your choice e.g. the website of your company
--Zeit/wie spät ist es?: The application tells you the live-time.
--test: With this command you can test, if the application works fine.
+- Firma/Unternehmen: you get automatically redirected to an website of your choice e.g. the website of your company
+- Zeit/wie spät ist es?: The application tells you the live-time.
+- test: With this command you can test, if the application works fine.
 ***
 ***
 Commands to be realised in the future:
